@@ -67,7 +67,6 @@ public class PageActions {
 	}
 	public static void clearText(WebDriver driver,String locatorProperty)
 	{
-		String locatorType = locatorProperty.split(":")[0];
 		String locatorValue = locatorProperty.split(":")[1];
 		driver.findElement(By.cssSelector(locatorValue)).clear();
 		
